@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Cargo Tracking App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Cargo Tracking App** — это приложение для отслеживания состояния грузов. Оно позволяет добавлять новые грузы, отслеживать их статус, фильтровать по статусам и выводить информацию о грузе, включая даты отправления и пункты назначения.
 
-## Available Scripts
+## Функции
 
-In the project directory, you can run:
+- **Добавление нового груза**: Укажите название груза, город отправления, пункт назначения и дату отправления.
+- **Отслеживание статуса**: Груз может быть в одном из трех статусов: "Ожидает отправки", "В пути" и "Доставлен".
+- **Фильтрация по статусу**: Вы можете фильтровать грузы по их статусам.
+- **Пагинация**: Для удобства просмотра грузов используется пагинация.
+- **Проверка статуса**: При попытке пометить груз как "Доставлен", если дата отправления еще не наступила, будет выведено уведомление об ошибке.
 
-### `npm start`
+## Скриншоты
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Установка
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Требования
 
-### `npm test`
+- [Node.js](https://nodejs.org/) (желательно последняя LTS версия)
+- [npm](https://www.npmjs.com/) или [yarn](https://yarnpkg.com/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Шаги для запуска
 
-### `npm run build`
+1. Клонируйте репозиторий:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/JessicaVadimovna/cargo-tracking-app.git
+   cd cargo-tracking-app
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Установите зависимости:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   Если вы используете **npm**:
 
-### `npm run eject`
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   Если вы используете **yarn**:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   yarn install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Запустите приложение:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   Для запуска в режиме разработки выполните команду:
 
-## Learn More
+   Если вы используете **npm**:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   Если вы используете **yarn**:
 
-### Code Splitting
+   ```bash
+   yarn start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   Это откроет приложение в браузере по адресу [http://localhost:3000](http://localhost:3000).
 
-### Analyzing the Bundle Size
+## Используемые технологии
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **React**: Библиотека для построения пользовательских интерфейсов.
+- **Tailwind CSS**: Утилитарный CSS-фреймворк для стилизации.
+- **Lucide React**: Иконки для отображения статусов грузов.
+- **React Select**: Компонент для выбора значений (например, статусов и городов).
 
-### Making a Progressive Web App
+## Разработка
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Добавление нового функционала
 
-### Advanced Configuration
+1. Создайте новую ветку:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   ```bash
+   git checkout -b feature/название-функционала
+   ```
 
-### Deployment
+2. Реализуйте функционал, убедитесь, что приложение работает.
+3. Сделайте коммит и отправьте изменения на GitHub:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+   ```bash
+   git add .
+   git commit -m "Описание изменений"
+   git push origin feature/название-функционала
+   ```
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. Создайте pull request.
