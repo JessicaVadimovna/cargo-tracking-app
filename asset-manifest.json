@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cargo-tracking-app/static/css/main.166ececf.css",
+    "main.js": "/cargo-tracking-app/static/js/main.d731c60d.js",
+    "index.html": "/cargo-tracking-app/index.html",
+    "main.166ececf.css.map": "/cargo-tracking-app/static/css/main.166ececf.css.map",
+    "main.d731c60d.js.map": "/cargo-tracking-app/static/js/main.d731c60d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.166ececf.css",
+    "static/js/main.d731c60d.js"
+  ]
+}
